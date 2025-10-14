@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db   = 'exercici1';
 $user = 'root';
-$pass = 'vagrant'; // posa la teva contrasenya si tens
+$pass = 'vagrant'; 
 $dsn  = "mysql:host=$host;dbname=$db;charset=utf8mb4";
 
 try {
@@ -13,7 +13,7 @@ try {
     exit("Error connexió: " . $e->getMessage());
 }
 
-// Funcions CRUD
+// CRUD
 
 function llegirUsuaris() {
     global $pdo;
