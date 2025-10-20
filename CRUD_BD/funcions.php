@@ -47,4 +47,11 @@ function eliminarUsuari($id) {
     $stmt = $pdo->prepare("DELETE FROM usuaris WHERE id=:id");
     $stmt->execute(['id' => $id]);
 }
+
+function obtenirUsuariPerId($id) {
+    global $pdo;
+    $stmt = $pdo->prepare("SELECT * FROM usuaris WHERE id = :id");
+    $stmt->execute(['id' => (int)$id]);
+    return $stmt->fetch();
+}
 ?>
