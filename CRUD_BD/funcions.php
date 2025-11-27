@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$db   = 'exercici1';
+$db   = 'CRUD_BD';
 $user = 'root';
-$pass = 'vagrant'; 
+$pass = 'root'; 
 $dsn  = "mysql:host=$host;dbname=$db;charset=utf8mb4";
 
 try {

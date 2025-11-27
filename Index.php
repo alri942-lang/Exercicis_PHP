@@ -42,9 +42,11 @@
 <body>
 	<h1>Índice de Ejercicios</h1>
 	<?php
+
 	$folders = [
 		'CRUD_BD',
-		'exercicis_php'
+		'exercicis_php',
+		'mvc_videojocs'
 	];
 	foreach ($folders as $folder) {
 		$path = __DIR__ . "/$folder";
